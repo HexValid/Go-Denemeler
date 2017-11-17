@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Ders 4</title>
+</head>
+<body>
+
+<form action="/postadresi">
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <input type="submit" value="Submit">
+</form>
+{{with .}} Adın ve soyadın: {{.}}
+{{else}}
+Henüz bişey girilmedi
+{{end}}
+
+</body>
+</html>
